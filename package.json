@@ -1,0 +1,10 @@
+{
+  "name": "ui-components-workspace",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "my-app",
+      "ui-components"
+    ]
+  }
+}

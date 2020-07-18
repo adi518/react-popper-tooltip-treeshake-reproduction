@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "path": "ui-components"
+    },
+    {
+      "path": "my-app"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "acid-terminal.conf.json": {
+      "setTerminalsAtStart": true,
+      "terminalGroups": [
+        {
+          "name": "develop",
+          "terminals": [
+            {
+              "name": "ui-components",
+              "path": "./ui-components",
+              "cmd": "yarn build:rollup:debug"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

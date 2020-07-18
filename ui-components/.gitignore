@@ -1,0 +1,16 @@
+/node_modules
+/dist
+.DS_Store
+.vscode
+/modules
+yarn-error.log
+package-lock.json
+stats.json
+.idea
+.yalc
+yalc.lock
+lib
+storybook-static/
+.out
+.now
+stats.html
