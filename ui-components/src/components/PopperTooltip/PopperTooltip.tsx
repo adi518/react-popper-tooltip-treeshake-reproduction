@@ -1,13 +1,25 @@
 import React from 'react';
-import Tooltip from 'react-popper-tooltip';
+import { usePopper } from 'react-popper';
 
 type PopperTooltipProps = {
   children?: any;
 };
 
-const Container = () => <div></div>;
-const Trigger = () => <div></div>;
-
 export const PopperTooltip: React.FC<PopperTooltipProps> = () => {
-  return <Tooltip tooltip={Container}>{Trigger}</Tooltip>;
+  const triggerRef = React.useRef(null);
+  const tooltipRef = React.useRef(null);
+
+  const { styles, attributes } = usePopper(
+    triggerRef.current,
+    tooltipRef.current
+  );
+
+  return (
+    <>
+      <div ref={triggerRef}>Click here!</div>
+      <div ref={tooltipRef} style={styles.popper} {...attributes.popper}>
+        Hello World!
+      </div>
+    </>
+  );
 };

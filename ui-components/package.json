@@ -107,7 +107,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.15",
-    "react-popper-tooltip": "^3.1.0"
+    "react-popper": "^2.2.3",
+    "@popperjs/core": "^2.4.4"
   },
   "nodemonConfig": {
     "ext": "ts, tsx",
