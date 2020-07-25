@@ -46,9 +46,6 @@ module.exports = {
       globals,
     },
   ],
-  // external: [
-  //  'react-popper-tooltip',
-  //],
   external: (id) => !id.startsWith('.') && !id.startsWith('/'),
   plugins: [
     cleaner({ targets: ['dist', 'lib'] }),
